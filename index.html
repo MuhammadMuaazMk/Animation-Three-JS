@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cookie&family=Galada&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="main w-full data-scroll-container">
+    <nav class="fixed w-full top-0 left-0 px-6 md:px-12 flex justify-between items-center">
+      <img
+        class="w-[200px] md:w-[450px] h-auto mix-blend-screen filter saturate-150 contrast-150"
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-bvn9rs4wqee91.png?width=640&crop=smart&auto=webp&s=63ca48711dde6b89b2caf1797238af6e7405ae67"
+        alt="Cyberpunk Logo" />
+  
+      <!-- Nav Links -->
+      <div class="hidden md:flex gap-6 md:gap-14 items-center">
+        <a href="#" class="tracking-tight text-lg md:text-4xl text-white hover:text-blue-400 hover:bg-white px-6 py-2 rounded-full transition-all">Games</a>
+        <a href="#" class="tracking-tight text-lg md:text-4xl text-white hover:text-blue-400 hover:bg-white px-6 py-2 rounded-full transition-all">News</a>
+        <a href="#" class="tracking-tight text-lg md:text-4xl text-white hover:text-blue-400 hover:bg-white px-6 py-2 rounded-full transition-all">Community</a>
+        <a href="#" class="tracking-tight text-lg md:text-4xl text-white hover:text-blue-400 hover:bg-white px-6 py-2 rounded-full transition-all">Shop</a>
+        <a href="#" class="tracking-tight text-lg md:text-4xl text-white hover:text-blue-400 hover:bg-white px-6 py-2 rounded-full transition-all">Support</a>
+      </div>
+  
+      <!-- Mobile Menu Icon -->
+      <div class="md:hidden text-white text-3xl cursor-pointer">☰</div>
+    </nav>
+  
+    <div class="w-full h-[150vh] overflow-hidden">
+      <img
+        class="absolute w-full md:w-3/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter saturate-150 contrast-150"
+        src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-bvn9rs4wqee91.png?width=1920&format=png&auto=webp&s=564b9bbd9aa6e74f8ff47e83f2f977468df73f0b"
+        alt="Cyberpunk Logo Large" />
+  
+      <!-- Background Blur Circle -->
+      <div
+        class="w-[24rem] h-[24rem] md:w-[48rem] md:h-[48rem] absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] bg-blue-800 blur-[40px] md:blur-[80px]">
+      </div>
+  
+      <canvas class="" id="canvas"></canvas>
+    </div>
+  
+    <div class="w-full h-screen relative bg-black"></div>
+  </div>
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
